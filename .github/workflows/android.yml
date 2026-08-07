@@ -41,3 +41,9 @@ jobs:
 
       - name: Run tests
         run: make test
+
+      - name: Upload AAR Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: libtailscale-aar
+          path: "**/*.aar"
